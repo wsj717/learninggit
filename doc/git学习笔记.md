@@ -65,3 +65,34 @@ git reset --hard <commintid>
 git check out -- <filename>
 ```
 
+## git撤销暂存区修改
+
+```shell
+git reset HEAD <filename>
+```
+
+## git删除文件
+
+```shell
+git rm <filename> #删除文件
+git checkout --<filename> #从版本仓库恢复文件，前提是没有执行git rm命令
+```
+
+## git注册ssh密钥
+
+```shell
+ssh -keygen -t rsa -C "youremail@example.com"	
+```
+
+## git绑定远程仓库
+
+```shell
+git remote add origin git@github.com:wsj717/learninggit.git #绑定远程仓库														
+```
+
+## 本地库推送到远程库
+
+```
+
+```
+
