@@ -59,3 +59,9 @@ git show <commitid>
 git reset --hard <commintid>
 ```
 
+## Git丢弃工作区的修改
+
+```shell
+git check out -- <filename>
+```
+
