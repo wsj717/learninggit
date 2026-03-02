@@ -62,7 +62,7 @@ git reset --hard <commintid>
 ## Git丢弃工作区的修改
 
 ```shell
-git check out -- <filename>
+git checkout -- <filename>
 ```
 
 ## git撤销暂存区修改
@@ -92,7 +92,42 @@ git remote add origin git@github.com:wsj717/learninggit.git #绑定远程仓库
 
 ## 本地库推送到远程库
 
+```shell
+git push -u origin master #只有第一次需要加-u
 ```
 
+## 查看远程库信息
+
+```shell
+git remote -v
 ```
+
+## 删除远程库
+
+```sh
+git remote rm origin #此处的“删除”其实是解除了本地和远程的绑定关系，并不是物理上删除了远程库。
+```
+
+## 克隆仓库
+
+```sh
+git clone <远程仓库地址>
+```
+
+## git分支
+
+对于不同的分支来说,工作区和暂存区是一样的，只有把当前分支的修改通过git add和git commit 命令提交后，切回其他分支才会显示其他分支的内容
+
+```sh
+git branch #查看分支
+git switch dev #切换到dev分支
+git switch -c dev #创建并切换到dev分支
+git merge <分支名称> #合并分支，需要在主节点上才能合并
+git branch -d <分支名称> #删除分支
+git branch <分支名称> #创建分支
+
+
+```
+
+## git解决冲突
 
